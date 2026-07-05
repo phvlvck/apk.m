@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مدير التطبيقات الذكي - Smart App Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <div id="app">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="fas fa-cube"></i>
+                <span>مدير التطبيقات</span>
+            </div>
+            <div class="nav-actions">
+                <button id="themeToggle" class="icon-btn" title="تبديل الوضع">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="langToggle" class="icon-btn" title="تبديل اللغة">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <div class="user-profile">
+                    <span id="userName">المطور</span>
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
+        </nav>
+
+        <div class="main-container">
+            <aside class="sidebar" id="sidebar">
+                <ul class="nav-menu">
+                    <li class="nav-item active" data-page="dashboard">
+                        <i class="fas fa-chart-pie"></i>
+                        <span>لوحة التحكم</span>
+                    </li>
+                    <li class="nav-item" data-page="devices">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>الأجهزة</span>
+                    </li>
+                    <li class="nav-item" data-page="licenses">
+                        <i class="fas fa-key"></i>
+                        <span>التراخيص</span>
+                    </li>
+                    <li class="nav-item" data-page="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span>الإشعارات</span>
+                    </li>
+                    <li class="nav-item" data-page="updates">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <span>التحديثات</span>
+                    </li>
+                    <li class="nav-item" data-page="logs">
+                        <i class="fas fa-history"></i>
+                        <span>السجلات</span>
+                    </li>
+                    <li class="nav-item" data-page="settings">
+                        <i class="fas fa-cog"></i>
+                        <span>الإعدادات</span>
+                    </li>
+                </ul>
+            </aside>
+
+            <main class="content" id="content">
+                <!-- سيتم تحميل المحتوى هنا بواسطة JavaScript -->
+            </main>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
